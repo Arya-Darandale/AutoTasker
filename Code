@@ -1,0 +1,33 @@
+# AutoTasker – Smart To-Do List Manager
+
+## Overview
+AutoTasker is a no-code workflow built using WorqHat that helps users manage daily tasks.
+Users can add new tasks, view their list, and mark tasks as complete — all through automated workflows.
+
+## Features
+- Add new tasks (Task Name + Due Time)
+- View all pending/completed tasks
+- Update task status (pending → done)
+- Fully no-code solution
+
+## Workflow Summary
+1. REST API Trigger → receives user input  
+2. Add Data Node → saves new tasks into the database  
+3. Query Data Node → fetches all tasks  
+4. Return Node → outputs a success message or task list
+
+## Database Design
+Table: **tasks**
+| Column | Type | Description |
+|---------|------|-------------|
+| task_name | short text | Name of the task |
+| due_time | short text | Task due time |
+| status | short text | pending / done |
+| created_at | datetime | auto timestamp |
+
+## Testing
+- Open WorqHat → Workflows → AutoTasker
+- Click **Test Flow**
+- Enter:
+README.md
+
